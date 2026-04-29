@@ -1,0 +1,205 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Mr. Ade Coker",
+      "email": "admin@academy.com",
+      "password": "Admin1234!",
+      "role": "admin",
+      "cohortId": null,
+      "avatarInitials": "AC",
+      "enrolledDate": null
+    },
+    {
+      "id": "2",
+      "name": "Ada Johnson",
+      "email": "ada.johnson@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "AJ",
+      "enrolledDate": "2026-02-03"
+    },
+    {
+      "id": "3",
+      "name": "Bayo Oladimeji",
+      "email": "bayo.oladimeji@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "BO",
+      "enrolledDate": "2026-02-03"
+    },
+    {
+      "id": "4",
+      "name": "Chiamaka Nwosu",
+      "email": "chiamaka.nwosu@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "CN",
+      "enrolledDate": "2026-02-03"
+    },
+    {
+      "id": "5",
+      "name": "David Eze",
+      "email": "david.eze@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "DE",
+      "enrolledDate": "2026-02-03"
+    },
+    {
+      "id": "6",
+      "name": "Faith Akpan",
+      "email": "faith.akpan@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "FA",
+      "enrolledDate": "2026-02-03"
+    },
+    {
+      "id": "7",
+      "name": "Grace Umeh",
+      "email": "grace.umeh@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "GU",
+      "enrolledDate": "2026-02-03"
+    },
+    {
+      "id": "8",
+      "name": "Ibrahim Musa",
+      "email": "ibrahim.musa@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "IM",
+      "enrolledDate": "2026-02-03"
+    },
+    {
+      "id": "9",
+      "name": "Jumoke Adebayo",
+      "email": "jumoke.adebayo@student.academy.com",
+      "password": "Student123!",
+      "role": "student",
+      "cohortId": 1,
+      "avatarInitials": "JA",
+      "enrolledDate": "2026-02-03"
+    }
+  ],
+  "cohorts": [
+    {
+      "id": "1",
+      "name": "Frontend Engineering - Cohort 3",
+      "startDate": "2026-02-03",
+      "endDate": "2026-06-30",
+      "instructor": "Mr. Ade Coker",
+      "description": "Full-stack frontend engineering with React, Next.js and TypeScript"
+    },
+    {
+      "name": "dhdshhds",
+      "startDate": "2026-04-16",
+      "endDate": "2026-04-17",
+      "instructor": "skipper",
+      "description": "skipper",
+      "id": "vByYW_AwrW8"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1",
+      "studentId": 2,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "present",
+      "checkInTime": "2026-04-27T09:04:00",
+      "note": ""
+    },
+    {
+      "id": "2",
+      "studentId": 3,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "late",
+      "checkInTime": "2026-04-27T09:18:00",
+      "note": "Traffic slowdown"
+    },
+    {
+      "id": "3",
+      "studentId": 4,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "absent",
+      "checkInTime": "",
+      "note": ""
+    },
+    {
+      "id": "4",
+      "studentId": 5,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "excused",
+      "checkInTime": "",
+      "note": "Medical appointment"
+    },
+    {
+      "id": "5",
+      "studentId": 6,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "present",
+      "checkInTime": "2026-04-27T08:58:00",
+      "note": ""
+    },
+    {
+      "id": "6",
+      "studentId": 7,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "present",
+      "checkInTime": "2026-04-27T09:00:00",
+      "note": ""
+    },
+    {
+      "id": "7",
+      "studentId": 8,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "late",
+      "checkInTime": "2026-04-27T09:12:00",
+      "note": "Bus delay"
+    },
+    {
+      "id": "8",
+      "studentId": 9,
+      "cohortId": 1,
+      "date": "2026-04-27",
+      "status": "present",
+      "checkInTime": "2026-04-27T09:05:00",
+      "note": ""
+    },
+    {
+      "studentId": "2",
+      "cohortId": 1,
+      "date": "2026-04-28",
+      "status": "present",
+      "checkInTime": "2026-04-28T07:18:05.770Z",
+      "note": "",
+      "id": "c9Ws00n_zfM"
+    },
+    {
+      "studentId": "2",
+      "cohortId": 1,
+      "date": "2026-04-28",
+      "status": "present",
+      "checkInTime": "2026-04-28T07:18:08.168Z",
+      "note": "",
+      "id": "idD-9GCEkmY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
