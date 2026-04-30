@@ -293,7 +293,12 @@ const CustomFormField = <T extends FieldValues>(props: CustomProps<T>) => {
           <Field className={className}>
             {label && (
               <FieldLabel>
-                <span className={labelClassName || 'field-label text-[13px] capitalize font-[300]'}>
+                <span
+                  className={
+                    labelClassName ||
+                    'field-label text-sm font-semibold text-[#191c1e] block ml-1 capitalize '
+                  }
+                >
                   {label}
                 </span>
               </FieldLabel>

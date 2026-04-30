@@ -16,6 +16,9 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "pw:test": "playwright test",
+    "cy:run:ci": "start-server-and-test dev:all http://localhost:3000 cy:run",
+    "pw:test:ci": "start-server-and-test dev:all http://localhost:3000 pw:test",
+    "test:push": "jest --coverage && npm run cy:run:ci && npm run pw:test:ci",
     "prepare": "husky"
   },
   "dependencies": {
@@ -62,6 +65,7 @@
     "msw": "^2.13.6",
     "playwright": "^1.59.1",
     "prettier": "^3.8.3",
+    "start-server-and-test": "^3.0.2",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.9",
     "typescript": "^5"

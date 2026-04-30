@@ -55,7 +55,6 @@ const LoginForm = () => {
           control={form.control}
           name="email"
           label="Email address"
-          labelClassName="text-sm font-semibold text-[#191c1e] block ml-1"
           fieldType={FormFieldType.EMAIL}
           placeholder="name@example.com"
           testId="login-email-input"
