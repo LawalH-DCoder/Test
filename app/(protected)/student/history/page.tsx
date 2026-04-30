@@ -44,7 +44,10 @@ export default function StudentHistoryPage() {
         <div className="mt-8 space-y-4">
           {filteredRecords.length ? (
             filteredRecords.map((record) => (
-              <div key={record.id} className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <div
+                key={`${record.id}${new Date()}`}
+                className="rounded-3xl border border-slate-200 bg-slate-50 p-5"
+              >
                 <p className="font-medium text-slate-900">{record.status.toUpperCase()}</p>
                 <p className="text-sm text-slate-600">
                   Checked in at: {record.checkInTime || 'N/A'}
