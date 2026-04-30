@@ -30,17 +30,17 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} ${montserrat.variable} h-full antialiased`}>
       <head>
         {/* Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap"
           rel="stylesheet"
-        />
+        /> */}
         {/* Icons */}
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </head>
       <body className="min-h-full flex flex-col">
         <QueryProvider>{children}</QueryProvider>
