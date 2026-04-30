@@ -13,7 +13,6 @@ describe('Login', () => {
     cy.url().should('include', '/admin/dashboard');
   });
   it('shows error message for wrong credentials', () => {
-    cy.intercept('GET', '**/users?email=*', { body: [] }); // no match
     cy.get('[data-testid="login-email-input"]').type('wrong@gmail.com');
     cy.get('[data-testid="login-password-input"]').type('wrongpass');
     cy.get('[data-testid="login-submit-button"]').click();
