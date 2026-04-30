@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Login', () => {
-  // beforeEach in Playwright uses the 'page' fixture
   test.beforeEach(async ({ page }) => {
     await page.goto('/login');
   });
@@ -9,21 +8,24 @@ test.describe('Login', () => {
   test('redirects student to /student/dashboard', async ({ page }) => {
     await page.getByTestId('login-email-input').fill('jumoke.adebayo@student.academy.com');
     await page.getByTestId('login-password-input').fill('Student123!');
-    await page.getByTestId('login-submit-button').click();
 
-    await expect(page).toHaveURL(/.*\/student\/dashboard/);
+    await Promise.all([
+      page.waitForURL('**/student/dashboard'),
+      page.getByTestId('login-submit-button').click(),
+    ]);
   });
 
   test('redirects admin to /admin/dashboard', async ({ page }) => {
     await page.getByTestId('login-email-input').fill('admin@academy.com');
     await page.getByTestId('login-password-input').fill('Admin1234!');
-    await page.getByTestId('login-submit-button').click();
 
-    await expect(page).toHaveURL(/.*\/admin\/dashboard/);
+    await Promise.all([
+      page.waitForURL('**/admin/dashboard'),
+      page.getByTestId('login-submit-button').click(),
+    ]);
   });
 
   test('shows error message for wrong credentials', async ({ page }) => {
-    // Cypress: cy.intercept -> Playwright: page.route
     await page.route('**/users?email=*', async (route) => {
       await route.fulfill({ body: JSON.stringify([]) });
     });
@@ -32,8 +34,6 @@ test.describe('Login', () => {
     await page.getByTestId('login-password-input').fill('wrongpass');
     await page.getByTestId('login-submit-button').click();
 
-    // Check visibility
-    const errorMessage = page.getByTestId('login-error');
-    await expect(errorMessage).toBeVisible();
+    await expect(page.getByTestId('login-error')).toBeVisible();
   });
 });
