@@ -1,26 +1,22 @@
 #!/bin/sh
 # .husky/pre-push
-# Runs before every git push. If any step fails, push is blocked.
+
 echo ' Running test suite before push...'
-# Step 1 — Jest unit tests with coverage threshold
+
+# Step 1 — Jest unit tests
 echo '→ Running Jest unit tests...'
 npm test -- --coverage
 if [ $? -ne 0 ]; then
   echo ' Jest tests failed or coverage threshold not met. Push blocked.'
   exit 1
 fi
-# Step 2 — Cypress E2E
-echo '→ Running Cypress E2E tests...'
-npm run cy:run:ci
+
+# Step 2 — All E2E tests (single server lifecycle)
+echo '→ Running Cypress + Playwright E2E tests...'
+npm run e2e:all
 if [ $? -ne 0 ]; then
-  echo ' Cypress tests failed. Push blocked.'
+  echo ' E2E tests failed. Push blocked.'
   exit 1
 fi
-# Step 3 — Playwright E2E
-echo '→ Running Playwright E2E tests...'
-npm run pw:test:ci
-if [ $? -ne 0 ]; then
-  echo ' Playwright tests failed. Push blocked.'
-  exit 1
-fi
+
 echo ' All tests passed. Pushing...'
