@@ -19,7 +19,7 @@ export const studentMenuItems: MenuItem[] = [
   },
   {
     label: 'Attendance',
-    href: '/student/history',
+    href: '/student/attendance',
     icon: 'calendar_today',
   },
   {

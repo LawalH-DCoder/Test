@@ -19,8 +19,9 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
     }
   }, [router, user, hydrated]);
 
-  if (!hydrated) return null;
-  if (!user) return null;
+  const isReady = hydrated && user;
+
+  if (!isReady) return null;
 
   return (
     <SidebarProvider>

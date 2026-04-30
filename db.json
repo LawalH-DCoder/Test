@@ -199,6 +199,51 @@
       "checkInTime": "2026-04-28T07:18:08.168Z",
       "note": "",
       "id": "idD-9GCEkmY"
+    },
+    {
+      "studentId": "2",
+      "cohortId": 1,
+      "date": "2026-04-30",
+      "status": "present",
+      "checkInTime": "2026-04-30T14:13:20.300Z",
+      "note": "",
+      "id": "IZ3Djb-TNUI"
+    },
+    {
+      "studentId": "2",
+      "cohortId": 1,
+      "date": "2026-04-30",
+      "status": "present",
+      "checkInTime": "2026-04-30T14:13:30.397Z",
+      "note": "",
+      "id": "9l5mpmJihOo"
+    },
+    {
+      "studentId": "2",
+      "cohortId": 1,
+      "date": "2026-04-30",
+      "status": "present",
+      "checkInTime": "2026-04-30T14:13:32.196Z",
+      "note": "",
+      "id": "r5EPghH3_2c"
+    },
+    {
+      "studentId": "2",
+      "cohortId": 1,
+      "date": "2026-04-30",
+      "status": "present",
+      "checkInTime": "2026-04-30T14:13:33.717Z",
+      "note": "",
+      "id": "IwZCxZAkfFU"
+    },
+    {
+      "studentId": "2",
+      "cohortId": 1,
+      "date": "2026-04-30",
+      "status": "present",
+      "checkInTime": "2026-04-30T14:17:37.507Z",
+      "note": "",
+      "id": "PQ0PatPOI-I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

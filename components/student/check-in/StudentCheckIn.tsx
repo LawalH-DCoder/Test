@@ -10,7 +10,7 @@ export function StudentCheckIn() {
     useStudentCheckIn();
 
   return (
-    <div className="">
+    <div className=" m-auto">
       <div className="w-full max-w-[480px]">
         <div className=" rounded-xl border border-slate-200 shadow-[0px_4px_6px_-1px_rgba(15,23,42,0.05)] overflow-hidden transition-all hover:shadow-lg">
           <div className="p-8 text-center bg-slate-50/50">
